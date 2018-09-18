@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tacoloco.project.objects.Order;
 
 @RestController
-public class FunctionController {
+public class OrderController {
     @PostMapping("/order")
     public ResponseEntity<?> order(@Valid @RequestBody Order order) {
         Map<String, String> response = new HashMap<>();
