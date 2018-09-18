@@ -65,8 +65,7 @@ $('.chorizo-inc').click(function(){
 });
 
 function updateTotal() {
-    var token = $("meta[name='_csrf']").attr("content");
-    var header = $("meta[name='_csrf_header']").attr("content");
+
     
     var Order = new Object();
     Order.veggie = parseInt($('.veggie-label').text());
@@ -85,9 +84,6 @@ function updateTotal() {
         dataType: 'json',
         cache: false,
         timeout: 600000,
-        beforeSend: function(xhr) {
-            xhr.setRequestHeader(header, token);
-        },
         success: function(data) {
             console.log(data);
             if (data["success"] === "true") {
