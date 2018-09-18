@@ -5,6 +5,7 @@ This Taco Loco backend is written using Spring Boot.
 ### Included:
 - Simple Rest Controller
 - Web page to demonstrate functionality
+- Unit testing
 
 #### Building:
     mvn package install
