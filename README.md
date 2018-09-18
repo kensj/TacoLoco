@@ -13,7 +13,8 @@ This Taco Loco backend is written using Spring Boot.
 #### Running:
     java -jar tacoloco-1.0.0-SNAPSHOT.jar
 ![N|Solid](https://bitbucket.org/kensj/tacoloco/raw/599604974bb25fd249ad37057ca7e4a735ae0e26/bitbucket/Running.png)  
-# Web Example
+#### Viewing on web:
+	http://localhost:8081
 ![N|Solid](https://bitbucket.org/kensj/tacoloco/raw/56b152f8f3b9e98624489cb0eb9240e637f4c3a9/bitbucket/Example.png)
 
 
