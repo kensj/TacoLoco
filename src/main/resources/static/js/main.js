@@ -1,9 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 $('.veggie-dec').click(function(){
     var label = $('.veggie-label');
     var num = (parseInt(label.text())-1).toString();
@@ -65,8 +59,6 @@ $('.chorizo-inc').click(function(){
 });
 
 function updateTotal() {
-
-    
     var Order = new Object();
     Order.veggie = parseInt($('.veggie-label').text());
     Order.chicken = parseInt($('.chicken-label').text());
@@ -85,7 +77,6 @@ function updateTotal() {
         cache: false,
         timeout: 600000,
         success: function(data) {
-            console.log(data);
             if (data["success"] === "true") {
                 $('.price-label').text(data["price"]);
                 $('.discount-label').text(data["discount"]);

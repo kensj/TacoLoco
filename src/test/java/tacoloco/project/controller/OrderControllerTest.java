@@ -1,11 +1,5 @@
 package tacoloco.project.controller;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.text.NumberFormat;
 import java.util.Locale;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -26,7 +20,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import tacoloco.project.Application;
 import tacoloco.project.objects.Order;
 
-
+/**
+ *
+ * @author kenji
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class OrderControllerTest {
