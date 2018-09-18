@@ -5,14 +5,73 @@
   <meta charset="UTF-8">
   <meta name="_csrf" th:content="${_csrf.token}"/>
   <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
-  <script src="/js/jquery.js"></script>
   <title>TacoLoco Menu</title>
-  <!--<link rel="stylesheet" type="text/css" href="/css/bulma.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <style>
+        .label {
+            display: inline;
+        }
+    </style>
 </head>
 
 <body>
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            TacoLoco Menu
+          </h1>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="hero is-primary">
+      <br>
+      <div class="container">        
+          <div class="field">
+              <label class="label veggie-label">0</label><label class="label"> Veggie Taco</label>
+            <div class="control">
+              <a class="button is-danger is-small veggie-dec">-</a>
+              <a class="button is-danger is-small veggie-inc">+</a>
+            </div>
+          </div>
 
-   
+          <div class="field">
+            <label class="label chicken-label">0</label><label class="label"> Chicken Taco</label>
+            <div class="control">
+              <a class="button is-danger is-small chicken-dec">-</a>
+              <a class="button is-danger is-small chicken-inc">+</a>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label beef-label">0</label><label class="label"> Beef Taco</label>
+            <div class="control">
+              <a class="button is-danger is-small beef-dec">-</a>
+              <a class="button is-danger is-small beef-inc">+</a>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label chorizo-label">0</label><label class="label"> Chorizo Taco</label>
+            <div class="control">
+              <a class="button is-danger is-small chorizo-dec">-</a>
+              <a class="button is-danger is-small chorizo-inc">+</a>
+            </div>
+          </div>
+          
+          <div class="field">
+              <label class="label">Cost: </label><label class="label price-label"></label>
+              <br>
+              <label class="label">Discount: </label><label class="label discount-label"></label>
+          </div>
+      </div>
+      <br>
+    </section>
 <script src="/js/main.js"></script>
 </body>
 </html>
